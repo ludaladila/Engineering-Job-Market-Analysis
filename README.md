@@ -14,7 +14,7 @@
    - [Salary Analysis](#3-salary-analysis)
    - [Company Analysis](#4-company-analysis)
    - [Job Description Analysis](#5-job-description-analysis)
-6. [Link to code and dataset](#link-to-data-sourcing-code)
+6. [Link to code](#link-to-data-sourcing-code)
 7. [Ethics Statement](#ethics-statement)
 8. [Open Source License](#open-source-license)
 
@@ -61,9 +61,9 @@ Each entry in the dataset contains the following attributes:
 - **URL**: Link to the original job posting.
 
 ### Link of Dataset
-The dataset is publicly available on Kaggle with th MIT License:
+The dataset is publicly available on Hugging face with th MIT License:
 
-[Kaggle Link](https://www.kaggle.com/datasets/luqing112/engineering-jobs-insight-dataset-csv)
+[Hugging face](https://huggingface.co/datasets/yiqing111/Engineering_Jobs_Insight_Dataset)
 
 
 ## Data Uniqueness
@@ -221,11 +221,6 @@ This document summarizes the EDA conducted to analyze job postings, skill demand
 The code used for data sourcing is publicly available on GitHub:
 
 [GitHub Repository Link](https://github.com/ludaladila/Engineering-Job-Market-Analysis/blob/main/adzuna_jobs_fetcher.py)
-
-The dataset is publicly available on Kaggle with th MIT License:
-
-[Kaggle Link](https://www.kaggle.com/datasets/luqing112/engineering-jobs-insight-dataset-csv)
-
 
 ## Ethics Statement
 
