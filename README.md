@@ -1,31 +1,24 @@
 # Engineering Job Market Analysis Dataset
 ## Table of Contents
-
-1. [Executive Summary](#executive-summary)  
-   - [Motivation and Potential Applications](#motivation-and-potential-applications)  
-2. [Description of Data](#description-of-data)  
-   - [Positions Included in the Dataset](#positions-included-in-the-dataset)  
-   - [Attributes of the Dataset](#attributes-of-the-dataset)  
-   - [Link of Dataset](#link-of-dataset)  
-3. [Data Uniqueness](#data-uniqueness)  
-4. [Power Analysis Results](#power-analysis-results)  
-5. [Exploratory Data Analysis](#exploratory-data-analysis)  
-   - [Geographical Distribution](#1-geographical-distribution)  
-   - [Skills Demand Analysis](#2-skills-demand-analysis)  
-     - [Overall Skills Statistics](#overall-skills-statistics)  
-     - [Skills Demand by Job Title](#skills-demand-by-job-title)  
-   - [Salary Analysis](#3-salary-analysis)  
-   - [Company Analysis](#4-company-analysis)  
-     - [Companies with the Most Job Postings](#companies-with-the-most-job-postings)  
-     - [Company-Specific Trends](#company-specific-trends)  
-   - [Word Cloud of Job Descriptions](#5-word-cloud-of-job-descriptions)  
-6. [Link to Data Sourcing Code](#link-to-data-sourcing-code)  
-7. [Ethics Statement](#ethics-statement)  
-8. [Open Source License](#open-source-license)  
-9. [Link to 3-Minute Pitch Video](#link-to-3-minute-pitch-video)  
+1. [Executive Summary](#executive-summary)
+   - [Motivation and Potential Applications](#motivation-and-potential-applications)
+2. [Description of Data](#description-of-data)
+   - [Positions Included in the Dataset](#positions-included-in-the-dataset)
+   - [Attributes of the Dataset](#attributes-of-the-dataset)
+   - [Link of Dataset](#link-of-dataset)
+3. [Data Uniqueness](#data-uniqueness)
+4. [Power Analysis Results](#power-analysis-results)
+5. [Exploratory Data Analysis (EDA) Report](#exploratory-data-analysis-eda-report)
+   - [Geographical Distribution](#1-geographical-distribution)
+   - [Skills Demand Analysis](#2-skills-demand-analysis)
+   - [Salary Analysis](#3-salary-analysis)
+   - [Company Analysis](#4-company-analysis)
+   - [Job Description Analysis](#5-job-description-analysis)
+6. [Link to Data Sourcing Code](#link-to-data-sourcing-code)
+7. [Ethics Statement](#ethics-statement)
+8. [Open Source License](#open-source-license)
 
 ---
-
 
 ## Executive Summary
 
@@ -118,157 +111,110 @@ n = 384 × 25 ≈ 10,000
 
 Thus, the project estimates it needs approximately **10,000 job descriptions**.
 
-## Exploratory Data Analysis
+### Exploratory Data Analysis (EDA) Report
 
-An exploratory data analysis (EDA) was performed to extract insights from the dataset.
+This document summarizes the EDA conducted to analyze job postings, skill demand, salary trends, and geographical distribution within the dataset.
 
-### 1. Geographical Distribution
+---
 
-**Objective**: Analyze the distribution of engineering job postings across different states.
+### 1. **Geographical Distribution**
+
+**Objective**: Identify the top locations for engineering job postings.
 
 **Methodology**:
-
-- Excluded entries where the state information was missing or invalid.
-- Counted the number of job postings per state.
-- Visualized the top 20 states with the highest number of job postings.
+- Analyzed the "Location" field to determine state distribution.
+- Extracted and visualized the top 20 states with the most job postings.
 
 **Findings**:
+- **Top Location**: The **United States** shows the highest volume of postings, Santa Clara, Travis, and Los Angeles are among the most popular hiring regions.
 
-- **Top States**:
-  - **California**: Highest number of job postings, reflecting the tech industry's concentration in Silicon Valley.
-  - **Texas**, **New York**, **Washington**, and **Massachusetts** also have significant numbers of job postings.
-- **Visualization**:
+**Visualization**:
+![Top 20 States by Job Postings](https://drive.google.com/uc?export=view&id=1dYcWTcaSudGQTQrM88enMA7J_uR5qB4j
+)
 
-  ![Job Distribution Across Top 20 States](images/state_job_distribution.png)
+---
 
-### 2. Skills Demand Analysis
+### 2. **Skills Demand Analysis**
 
-#### Overall Skills Statistics
+#### **Overall Skills Demand**
 
-**Objective**: Identify the most in-demand skills across all engineering job postings.
+**Objective**: Understand the most in-demand skills across all job postings.
 
 **Methodology**:
-
-- Extracted skills from job descriptions using a predefined skills dictionary covering programming languages, web technologies, databases, cloud platforms, etc.
-- Counted the frequency of each skill.
+- Used a predefined skill dictionary to extract skills from job descriptions.
+- Aggregated and visualized the frequency of skills.
 
 **Findings**:
+- **Top Skills**:
+  - AI, iOS, and Android dominate the demand.
+  - Cloud and DevOps-related skills (e.g., AWS) are increasingly crucial.
+  - Soft skills like leadership and communication are also sought after.
 
-- **Top 10 Most Common Skills**:
-  1. **agile**
-  2. **java**
-  3. **aws**
-  4. **leadership**
-  5. **sql**
-  6. **javascript**
-  7. **scrum**
-  8. **c++**
-  9. **python**
-  10. **c#**
+**Visualization**:
+![Top 20 Most Common Skills](https://drive.google.com/uc?export=view&id=1zAw_WnRqDXFwfKDbcEKZi60DNXUa1wMM
+)
 
-- **Visualization**:
+---
 
-  ![Top 20 Most Common Skills](images/top_skills.png)
+### 3. **Salary Analysis**
 
-#### Skills Demand by Job Title
-
-**Objective**: Determine the most sought-after skills for specific job titles.
+**Objective**: Examine salary distribution for various engineering roles.
 
 **Methodology**:
-
-- Grouped data by job title.
-- For each job title, counted the frequency of skills mentioned.
-
-**Example Findings**:
-
-- **Software Engineer**:
-  - High demand for **Java**, **C++**, **Python**, and knowledge of **Agile** methodologies.
-- **Data Scientist**:
-  - Emphasis on **Python**, **machine learning**, **data analysis**, and proficiency with **SQL**.
-
-- **Visualizations**: Generated bar charts for each job title showing the top skills.
-
-### 3. Salary Analysis
-
-**Objective**: Explore the salary ranges and distribution for engineering roles.
-
-**Methodology**:
-
-- Calculated average salaries using the provided salary ranges.
-- Analyzed statistical metrics such as mean, median, and percentiles.
-- Visualized salary distribution using histograms and boxplots.
+- Analyzed salary data from the "Salary Min" and "Salary Max" columns.
+- Calculated and visualized the average salaries across roles.
 
 **Findings**:
+- **Salary Trends**:
+  - Average salaries cluster between $80,000 and $130,000 annually.
+  - Outliers indicate specialized or senior positions exceeding $150,000.
+**Visualization**:
+![Salary Distribution](https://drive.google.com/uc?export=view&id=1j-a0DpkVpHmVk_4xsnbTGbruo7pEX-gK
+)
 
-- **Average Salary**: Approximately \$105,000.
-- **Salary Range**: Most salaries range between \$80,000 and \$130,000.
-- **Outliers**: Some positions offer salaries exceeding \$150,000, indicating roles requiring specialized expertise or senior positions.
+---
 
-- **Visualization**:
+### 4. **Company Analysis**
 
-  - **Histogram**:
+#### **Top Hiring Companies**
 
-    ![Salary Distribution Histogram](images/salary_histogram.png)
-
-  - **Boxplot**:
-
-    ![Salary Distribution Boxplot](images/salary_boxplot.png)
-
-### 4. Company Analysis
-
-#### Companies with the Most Job Postings
-
-**Objective**: Identify which companies are actively hiring for engineering positions.
+**Objective**: Highlight companies with the highest number of job postings.
 
 **Methodology**:
-
 - Counted the number of job postings per company.
-- Listed and visualized the top 20 companies.
+- Visualized the top 20 companies.
 
 **Findings**:
+- **Key Employers**:
+  - **Cheez** leads the hiring pool, followed by **Boeing** and **Mr.Cooper**.
+- **Notable Trends**:
+  - Companies in tech, healthcare, and finance are aggressively hiring.
 
-- **Top Hiring Companies**:
-  - **Amazon**
-  - **Microsoft**
-  - **Google**
-  - **IBM**
-  - **Apple**
+**Visualization**:
+![Top Hiring Companies](https://drive.google.com/uc?export=view&id=1u8iaraVYBKOWZ4dgfXhcvisLO5Wr9WT2
+)
 
-- **Visualization**:
+---
 
-  ![Top 20 Companies by Job Postings](images/top_companies.png)
+### 5. **Job Description Analysis**
 
-#### Company-Specific Trends
-
-**Objective**: Analyze salary offerings and skill demands for top companies.
+**Objective**: Extract common themes and requirements from job descriptions.
 
 **Methodology**:
-
-- For each of the top companies, calculated the average salary offered.
-- Identified the most demanded skills per company.
-
-**Findings**:
-
-- **Amazon** offers competitive salaries with a focus on skills like **AWS**, **Java**, and **Leadership**.
-- **Google** emphasizes skills in **Python**, **Machine Learning**, and **Agile** methodologies.
-
-### 5. Word Cloud of Job Descriptions
-
-**Objective**: Visualize the most frequent words used in job descriptions to identify common themes and requirements.
-
-**Methodology**:
-
-- Combined all job descriptions into a single text corpus.
-- Processed the text by removing common stopwords and irrelevant terms.
-- Generated a word cloud visualization.
+- Combined job descriptions into a single corpus.
+- Removed stopwords and generated a word cloud.
 
 **Findings**:
+- **Key Themes**:
+  - Terms like "solution," "support," and "service" highlight client-focused roles.
+  - "Team," "data," and "responsible" suggest collaboration and leadership qualities are valued.
 
-- Commonly emphasized terms include **development**, **team**, **management**, **design**, **system**, and **support**.
+**Visualization**:
+![Word Cloud of Job Descriptions](https://drive.google.com/uc?export=view&id=1eqMP95dGiF8Lw3as2hCocZ1VKWjyFKpP
+)
 
-- **Visualization**:
+---
 
-  ![Word Cloud of Job Descriptions](images/job_description_wordcloud.png)
 
 ## Link to Data Sourcing Code
 
@@ -315,6 +261,6 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 ## Link to 3-Minute Pitch Video
 
-[Watch the Project Presentation Video](https://www.youtube.com/watch?v=YourVideoLink)
+[Watch the Project Presentation Video]()
 
 
