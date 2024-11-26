@@ -1,4 +1,32 @@
 # Engineering Job Market Analysis Dataset
+## Table of Contents
+
+1. [Executive Summary](#executive-summary)  
+   - [Motivation and Potential Applications](#motivation-and-potential-applications)  
+2. [Description of Data](#description-of-data)  
+   - [Positions Included in the Dataset](#positions-included-in-the-dataset)  
+   - [Attributes of the Dataset](#attributes-of-the-dataset)  
+   - [Link of Dataset](#link-of-dataset)  
+3. [Data Uniqueness](#data-uniqueness)  
+4. [Power Analysis Results](#power-analysis-results)  
+5. [Exploratory Data Analysis](#exploratory-data-analysis)  
+   - [Geographical Distribution](#1-geographical-distribution)  
+   - [Skills Demand Analysis](#2-skills-demand-analysis)  
+     - [Overall Skills Statistics](#overall-skills-statistics)  
+     - [Skills Demand by Job Title](#skills-demand-by-job-title)  
+   - [Salary Analysis](#3-salary-analysis)  
+   - [Company Analysis](#4-company-analysis)  
+     - [Companies with the Most Job Postings](#companies-with-the-most-job-postings)  
+     - [Company-Specific Trends](#company-specific-trends)  
+   - [Word Cloud of Job Descriptions](#5-word-cloud-of-job-descriptions)  
+6. [Link to Data Sourcing Code](#link-to-data-sourcing-code)  
+7. [Ethics Statement](#ethics-statement)  
+8. [Open Source License](#open-source-license)  
+9. [Link to 3-Minute Pitch Video](#link-to-3-minute-pitch-video)  
+
+---
+
+This structured table of contents ensures easy navigation through the README document, allowing readers to quickly locate specific sections of interest. Let me know if there’s anything else you’d like to refine!
 
 ## Executive Summary
 
