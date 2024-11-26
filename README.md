@@ -14,7 +14,7 @@
    - [Salary Analysis](#3-salary-analysis)
    - [Company Analysis](#4-company-analysis)
    - [Job Description Analysis](#5-job-description-analysis)
-6. [Link to Data Sourcing Code](#link-to-data-sourcing-code)
+6. [Link to code and dataset](#link-to-data-sourcing-code)
 7. [Ethics Statement](#ethics-statement)
 8. [Open Source License](#open-source-license)
 
@@ -222,6 +222,11 @@ The code used for data sourcing is publicly available on GitHub:
 
 [GitHub Repository Link](https://github.com/ludaladila/Engineering-Job-Market-Analysis/blob/main/adzuna_jobs_fetcher.py)
 
+The dataset is publicly available on Kaggle with th MIT License:
+
+[Kaggle Link](https://www.kaggle.com/datasets/luqing112/engineering-jobs-insight-dataset-csv)
+
+
 ## Ethics Statement
 
 This project was conducted with careful consideration of ethical standards and legal regulations.
@@ -258,9 +263,5 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 ---
 
 **Note**: For the full license text, please refer to the [LICENSE](https://github.com/ludaladila/Engineering-Job-Market-Analysis/blob/main/LICENSE) file in the repository.
-
-## Link to 3-Minute Pitch Video
-
-[Watch the Project Presentation Video]()
 
 
