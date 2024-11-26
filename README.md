@@ -26,7 +26,6 @@
 
 ---
 
-This structured table of contents ensures easy navigation through the README document, allowing readers to quickly locate specific sections of interest. Let me know if there’s anything else you’d like to refine!
 
 ## Executive Summary
 
